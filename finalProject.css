@@ -1,0 +1,23 @@
+h1{
+  font-family: 'Pangolin', cursive;
+}
+h2{
+  font-family: 'Girassol', cursive;
+}
+h3{
+  font-family: 'Reggae One', cursive;
+}
+h4{
+  font-family: 'Indie Flower', cursive;
+}
+p{
+  font-family: 'Architects Daughter', cursive;
+}
+button a:hover{
+  color: blue;
+}
+body{
+  margin: 50px;
+  background-color: #E3C6AD;
+  text-align: center;
+}

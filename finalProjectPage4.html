@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <link rel = "stylesheet" href = "finalProject.css">
+    <link rel="stylesheet" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <script>
+    function pageFive()
+    {
+        window.location.href = "finalProjectPage5.html";
+    }
+    function pageSeven()
+    {
+        window.location.href = "finalProjectPage7.html";
+    }
+    function pageFour()
+    {
+        window.location.href = "finalProjectPage4.html"
+    }
+    function hide()
+      {
+        document.getElementById("answer").style.visibility = "hidden";
+        document.getElementById("button").style.visibility = "hidden";
+      }
+    function actionOne()
+      {
+        document.getElementById("question").innerHTML = "What's the opposite of waterfall?";
+        document.getElementById("answer").style.visibility = "visible";
+        document.getElementById("button").style.visibility = "visible";
+      }
+    function checkAnswer()
+      {
+        var x = document.getElementById("answer").value;
+        if(x == "firefly")
+        {
+          document.getElementById("pic").innerHTML = "<img src = 'firefly.jpg'>";
+          window.location.href = "finalProjectPage41.html"
+        }
+        else{
+          //alert("Wrong!");
+          document.getElementById("h1").innerHTML = "<title.style.display = 'none'>";
+          document.getElementById("h2").innerHTML = "<title.style.display = 'none'>";
+          document.getElementById("h3").innerHTML = "<title.style.display = 'none'>";
+          document.getElementById("p").innerHTML = "<title.style.display = 'none'>";
+          document.getElementById("pic").innerHTML = "Not quite! Try putting it in all lowercase and one word!";
+        }
+      }
+    </script>
+  </head>
+
+  <body onload = "hide()">
+    <h1 id = "h1">GOODNESS!</h1>
+    <h2 id = "h2">You've found a waterfall!</h2>
+    <h3 id = "h3">Do you choose to walk around and enjoy the view, or go swimming?</h3>
+    <p id = "p">Hey, click on the waterfall to hear a joke!</p>
+    <p id = "pic">
+    <img src = "waterfall.jpg" width = "50%" height = "50%" onclick = "actionOne()">
+  </p>
+    <p id = "question"></p>
+    <input type = "text" id = "answer">
+    <input type = "button" value = "Submit" id = "button" onclick = "checkAnswer()">
+    <p id = "mys"></p>
+    <input type = "button" value = "walk around" onclick = "pageFive()">
+    <input type = "button" value = "go swimming" onclick = "pageSeven()">
+  </body>
+</html>

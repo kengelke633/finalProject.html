@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <link rel = "stylesheet" href = "finalProject.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <script>
+      function getName()
+      {
+        var x = window.localStorage.getItem('name',x);
+        document.getElementById("welcome").innerHTML = x + "!";
+      }
+      function cont()
+      {
+        window.location.href = "finalProjectPage10.html";
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1>CONGRATS!</h1>
+      <h2 id = "welcome"></h2>
+        <h3>You've reached the temple!</h3>
+          <h4>You can now go inside to collect the hidden treasure!</h4>
+    <p><img src = "temple.jpg"></p>
+    <input type = "button" value = "SEE NAME" onclick = "getName()">
+    <input type = "button" value = "CONTINUE" onclick = "cont()">
+  </body>
+</html>

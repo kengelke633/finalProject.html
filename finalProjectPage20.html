@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <link rel = "stylesheet" href = "finalProject.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <script>
+      function restart()
+      {
+        window.location.href = "finalProjectPage2.html";
+      }
+      function seeName()
+      {
+        var x = window.localStorage.getItem('name',x);
+        document.getElementById("welcome").innerHTML = x + ",";
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1>OH NO,</h1>
+      <h2 id = "welcome"></h2>
+        <h3>You got attacked and died!</h3>
+          <h4>Click the button to restart your adventure</h4>
+    <input type = "button" value = "RESTART" onclick = "restart()">
+    <input type = "button" value = "SEE NAME" onclick = "seeName()">
+  </body>
+</html>

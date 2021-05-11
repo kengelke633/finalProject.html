@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <link rel = "stylesheet" href = "finalProject.css">
+    <link rel="stylesheet" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <script>
+      function openMap()
+      {
+        document.getElementById("title").innerHTML = "Click the treasure map to start your journey!";
+        //document.getElementById("title").innerHTML = "<title.style.display = 'none'>";
+        var x = "Click on the treasure map to start down the path and begin your adventure!";
+        document.getElementById("pic").innerHTML = "<img src = 'map.jpg' width = '50%' height = '50%' onclick = 'movePage()'>";
+      }
+      function movePage()
+      {
+        window.location.href = "finalProjectPage3.html";
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1 id = "title">Click the button to view the treasure map!</h1>
+    <p id = "pic">
+    <input type = "button" value = "Treasure Map" onclick = "openMap()" id = "button"></p>
+  </body>
+</html>

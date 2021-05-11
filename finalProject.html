@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <link rel = "stylesheet" href = "finalProject.css">
+    <link rel="stylesheet" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <script>
+    function saveName()
+    {
+      var x = document.getElementById("name").value;
+        window.localStorage.setItem('name',x);
+        window.location.href = "finalProjectPage2.html";
+    }
+    </script>
+  </head>
+
+  <body>
+    <h1>Welcome Treasure Hunter!</h1>
+    <h2>Enter your name to start your adventure! (Please type it in all caps!)</h2>
+    <p id = "pic">
+    <img src = "cartoon.jpg" width = "50%" height = "50%" onclick = "actionOne()">
+  </p>
+    <p id = "question"></p>
+    <p>Enter your name!</p>
+    <input type = "text" id = "name">
+    <input type = "button" value = "GO" onclick = "saveName()">
+    <p id = "mys"></p>
+  </body>
+</html>

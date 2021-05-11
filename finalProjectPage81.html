@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <link rel = "stylesheet" href = "finalProject.css">
+    <link rel="stylesheet" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <script>
+    function hide()
+        {
+          document.getElementById("answer").style.visibility = "hidden";
+          document.getElementById("button").style.visibility = "hidden";
+        }
+      function actionOne()
+        {
+          document.getElementById("question").innerHTML = "What do you call monkeys who share an Amazon account?";
+          document.getElementById("answer").style.visibility = "visible";
+          document.getElementById("button").style.visibility = "visible";
+        }
+      function checkAnswer()
+        {
+          var x = document.getElementById("answer").value;
+          if(x == "primemates")
+          {
+            document.getElementById("pic").innerHTML = "<img src = 'primemates.jpg'>";
+            window.location.href = "finalProjectPage82.html"
+          }
+          else{
+            //alert("Wrong!");
+            document.getElementById("h1").innerHTML = "<title.style.display = 'none'>";
+            document.getElementById("h2").innerHTML = "<title.style.display = 'none'>";
+            document.getElementById("h3").innerHTML = "<title.style.display = 'none'>";
+            document.getElementById("p").innerHTML = "<title.style.display = 'none'>";
+            document.getElementById("pic").innerHTML = "Not quite, try putting it in all lowercase and one word!";
+          }
+        }
+    </script>
+  </head>
+
+  <body onload = "hide()">
+    <h1 id = "h1">YAY!</h1>
+      <h2 id = "h2">The monkey loved the banana!</h2>
+        <h3 id = "h3">Click the button to continue your adventure!</h3>
+          <p id = "p">Click the monkey to hear a monkey joke!</p>
+    <p id = "pic">
+    <img src = "ban.jpg" onclick = "actionOne()"></p>
+    <p id = "question"></p>
+    <input type = "text" id = "answer">
+    <input type = "button" value = "Submit" id = "button" onclick = "checkAnswer()">
+    <p id = "mys"></p>
+  </body>
+</html>
